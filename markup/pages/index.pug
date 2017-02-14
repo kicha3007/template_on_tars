@@ -1,0 +1,18 @@
+doctype html
+html(lang="ru")
+    include ../components/scripts/scripts
+    include ../components/head/head
+    include ../components/footer/footer
+
+    head
+        +head(head.defaults)
+    body
+        .wrapper
+            section.content
+
+            //- Include your components here
+
+        .footer
+            +footer()
+
+        +scripts()
