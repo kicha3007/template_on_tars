@@ -1,14 +1,17 @@
 doctype html
 html(lang="ru")
-    include ../components/scripts/scripts
-    include ../components/head/head
-    include ../components/footer/footer
+    include ../components/head/scripts/scripts.pug
+    include ../components/head/head.pug
+    include ../components/footer/footer.pug
+    include ../components/logo/logo.pug
+
 
     head
         +head(head.defaults)
     body
         .wrapper
             section.content
+                +logo(logo.switch)
 
             //- Include your components here
 
