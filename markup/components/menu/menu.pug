@@ -1,6 +1,5 @@
-mixin menu (data, data2)
+mixin menu (data)
     ul(class=data.content)&attributes(attributes)
         each value, key in data
             li
-                #{data.menu.className}
                 a(href= key)= value

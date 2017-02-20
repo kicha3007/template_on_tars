@@ -4,7 +4,7 @@ html(lang="ru")
     include ../components/head/head.pug
     include ../components/footer/footer.pug
     include ../components/logo/logo.pug
-    include ../components/nav/nav.pug
+    include ../components/menu/menu.pug
 
     head
         +head(head.defaults)
@@ -12,7 +12,7 @@ html(lang="ru")
         .wrapper
             section.content
                 +logo(logo.content)
-                +menu(menu.items, menu.content)
+                +menu(menu.items)
 
             //- Include your components here
 
