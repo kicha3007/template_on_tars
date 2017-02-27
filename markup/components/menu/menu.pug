@@ -1,5 +1,13 @@
 mixin menu (data)
-    ul(class=data.content)&attributes(attributes)
-        each value, key in data
-            li
-                a(href= key)= value
+    -
+        var items =  {
+        "href": "Пункт4",
+        "href2": "Пункт2",
+        "href3": "Пункт3"
+        }
+
+    .menu
+        ul.menu__list&attributes(attributes)
+            each item in data.items
+                li(class=((item.href == "/index.html") ? "active" : ""))
+                    a(href= item.href) #{item.text}

@@ -5,14 +5,21 @@ html(lang="ru")
     include ../components/footer/footer.pug
     include ../components/logo/logo.pug
     include ../components/menu/menu.pug
+    include ../components/breadcrumbs/breadcrumbs.pug
 
     head
         +head(head.defaults)
     body
         .wrapper
+            header.header
+                .header__top
+                    .container
+                        .header__left
             section.content
                 +logo(logo.content)
-                +menu(menu.items)
+                +menu(menu.nav1)
+                +menu(menu.nav2)
+                +breadcrumbs(breadcrumbs.index)
 
             //- Include your components here
 
