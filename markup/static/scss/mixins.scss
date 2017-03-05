@@ -8,19 +8,11 @@
     list-style-position: outside;
 }
 
-@mixin cf {
-    &:before,
+%clearfix {
     &:after {
-        display: table;
         content: "";
-    }
-
-    &:after {
+        display: block;
         clear: both;
-    }
-
-    .lt-ie8 & {
-        zoom: 1;
     }
 }
 
@@ -29,4 +21,7 @@
     text-justify: newspaper;
 }
 
-// You can add your own mixins here:
+@mixin inlineblock($valign: top) {
+    display: inline-block;
+    vertical-align: $valign;
+}

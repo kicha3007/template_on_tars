@@ -1,22 +1,23 @@
 doctype html
 html(lang="ru")
-    include ../components/head/scripts/scripts.pug
+    include ../components/footer/scripts/scripts.pug
     include ../components/head/head.pug
     include ../components/footer/footer.pug
     include ../components/logo/logo.pug
     include ../components/menu/menu.pug
     include ../components/breadcrumbs/breadcrumbs.pug
+    include ../components/header/header.pug
 
     head
         +head(head.defaults)
     body
         .wrapper
-            header.header
-                .header__top
-                    .container
-                        .header__left
+            +header()
             section.content
-                +logo(logo.content)
+                aside.sidebar
+                main.main-content
+
+
                 +menu(menu.nav1)
                 +menu(menu.nav2)
                 +breadcrumbs(breadcrumbs.index)

@@ -3,15 +3,15 @@ var data = {
         nav1: {
             items: [
                 {
-                    href: "/index.html",
+                    href: "index.html",
                     text: "Главная страница"
                 },
                 {
-                    href: "/news.html",
+                    href: "news.html",
                     text: "Новости"
                 },
                 {
-                    href: "/reviews.html",
+                    href: "reviews.html",
                     text: "Отзывы"
                 }
             ]
@@ -19,15 +19,15 @@ var data = {
         nav2: {
             items: [
                 {
-                    href: "/index.html",
+                    href: "index.html",
                     text: "Вотfff"
                 },
                 {
-                    href: "/news.html",
+                    href: "news.html",
                     text: "Так"
                 },
                 {
-                    href: "/reviews.html",
+                    href: "reviews.html",
                     text: "Вот"
                 }
             ]

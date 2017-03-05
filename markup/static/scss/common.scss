@@ -1,22 +1,43 @@
-// Common styles of the project
+$footer-height: 60px;
+$container-width: 1256px;
 
-html, body {
+/******************* Основные стили *******************/
+
+.container {
+    width: $container-width;
+    padding: 0 5px;
+}
+
+a:link, 
+a:visited, 
+a:hover, 
+a:active {
+    text-decoration: none;
+} 
+
+/******************* Прижатый футер *******************/
+
+html,
+body {
+    width: 100%;
     height: 100%;
 }
 
-.page {
-    
+body {
+    min-width: $container-width;
+    font-family: "#", sans-serif;
+    color: black;
+    font-size: 16px;
 }
 
-.content {
+.wrapper {
     min-height: 100%;
-    margin-bottom: -50px;
-}
+    margin-bottom: -$footer-height;
+    overflow: hidden;
 
-* html .page__wrapper {
-    height: 100%;
-}
-
-.page__buffer {
-    height: 50px;
+    &:after {
+        content: "";
+        display: block;
+        height: $footer-height;
+    }
 }
