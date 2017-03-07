@@ -1,27 +1,44 @@
-// Mixins.
-
-@mixin nl {
-    margin: 0;
-    padding: 0;
-    text-indent: 0;
-    list-style: none;
-    list-style-position: outside;
-}
 
 %clearfix {
     &:after {
         content: "";
-        display: block;
+        display: table;
         clear: both;
     }
-}
-
-@mixin blocks-justify {
-    text-align: justify;
-    text-justify: newspaper;
 }
 
 @mixin inlineblock($valign: top) {
     display: inline-block;
     vertical-align: $valign;
 }
+
+@mixin blocks-justify {
+    text-align: justify;
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+    }
+}
+
+@mixin placeholder($color: #000000) {
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+        color: $color;
+    }
+    &::-moz-placeholder {  /* Firefox 19+ */
+        color: $color;
+    }
+    &-ms-input-placeholder {
+        color: $color;
+    }
+}
+
+
+
+
+
+
