@@ -1,0 +1,20 @@
+mixin header(data)
+    include ../logo/logo.pug
+    include ../contacts-info/contacts-info.pug
+    include ../search/search.pug
+    include ../nav/nav.pug
+
+    header.header
+        .container
+            .header__top
+                .header__left
+                    .header__logo
+                        +logo()
+                    .header__contacts
+                        +contacts-info()
+                    .header__search
+                        +search()
+                .header__right
+            .header__bottom
+                nav.nav
+                    +nav(nav.nav1, nav1)

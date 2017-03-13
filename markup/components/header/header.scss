@@ -1,0 +1,28 @@
+.header__left,
+.header__right {
+  float: left;
+  width: 50%;
+}
+
+.header__top {
+  @extend %clearfix;
+  padding-bottom: 10px;
+}
+
+.header__contacts {
+  float: left;
+  width:40%;
+}
+
+.header__logo {
+  float: left;
+  width: 20%;
+}
+
+.header__contacts {
+}
+
+.header__search {
+  float: left;
+  width: 40%;
+}

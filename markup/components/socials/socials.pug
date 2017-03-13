@@ -1,0 +1,8 @@
+mixin socials(data)
+    - var icons = ["fb", "vk" , "tw"];
+    .socials
+        ul.socials
+            each icon in icons
+                li(class="social__item social__item-- + icon")
+                    a.socials__link(href="#")
+                        .social__icon

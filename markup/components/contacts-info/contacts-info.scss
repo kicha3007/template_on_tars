@@ -1,0 +1,19 @@
+$icons: fb, vk, tw;
+
+@each $icon in $icons {
+  .social__item--#{$icon} {
+    background: red;
+  }
+};
+
+.contacts-info {
+  color: black;
+  line-height: 1.5em;
+}
+
+.contacts-info__phone,
+.contacts-info__mail {
+  display: block;
+  color: inherit;
+}
+

@@ -1,0 +1,7 @@
+mixin sidebar(data)
+    .sidebar
+        .categories
+            ul.categories__list
+                each item in data.items
+                    li(class=((item.href == "index.html") ? "active" : ""))
+                        a(href= item.href) #{item.text}

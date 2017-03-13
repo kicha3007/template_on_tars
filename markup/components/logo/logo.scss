@@ -1,0 +1,13 @@
+.logo {
+  display: inline-block;
+  color: black;
+}
+
+.logo__img-wrap {
+  width: 100px;
+  height: 80px;
+  overflow: hidden;
+  img {
+    width:100%
+  }
+}

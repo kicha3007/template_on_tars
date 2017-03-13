@@ -1,0 +1,11 @@
+mixin breadcrumbs(data)
+    - var lastItem = data.items[data.items.length - 1]
+    .breadcrumbs
+        ul.breadcrumbs__list&attributes(attributes)
+            each item in data.items
+                li
+                    if  item == lastItem
+                        span #{item.text}
+                    else
+                        a(href= item.href) #{item.text}
+                        span.bread-seporator

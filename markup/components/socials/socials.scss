@@ -1,0 +1,7 @@
+$icons: fb, vk, tw;
+
+@each $icon in $icons {
+  .social__item--#{$icon} {
+    background: red;
+  }
+};
