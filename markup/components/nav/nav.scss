@@ -1,0 +1,29 @@
+.nav__list {
+  @include justify();
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.nav__list li {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.nav__list li a {
+  display: block;
+  padding: 12px 9px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s;
+  &:visited
+  &:hover,
+  &:active  {
+    text-decoration: none;
+  }
+}
+
+.nav__list> li:hover> a,
+.nav__list> li.active> a {
+  background: #0868c1;
+}
